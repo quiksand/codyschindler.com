@@ -2,11 +2,12 @@
  * FILENAME:    index-css.css
  * DESCRIPTION: This is the CSS for codyschindler.com main page (index.html).
  * REQS:        n/a
- * VERISON:     1.0.0
- * UPDATED:     2015-10-25
+ * VERISON:     1.0.1
+ * UPDATED:     2015-10-27
  * WRITTEN BY:  Cody Schindler (quiksand)
  * ORGANIZATION: Loading order, then functional groups, then alphabetical
  * CHANGELOG:  
+ * 1.0.1 (2015-10-27): Made the portfolio overlay system better.
  * 1.0.0 (2015-10-25): Creation and organization in preparatiion for site launch.
  */
 
@@ -148,10 +149,13 @@ a.port-anchor {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   border-radius: 3px;
   background-color: rgba(10, 10, 10, 0.9);
   /*  overflow: hidden;*/
   opacity: 0;
+  display: flex;
+  align-items: center;
 }
 
 .portfolio-header {
@@ -163,8 +167,9 @@ a.port-anchor {
 }
 
 .spanner {
-  padding: 70px 10px 150px 10px;
+  /*padding: 70px 10px 150px 10px;*/
   /*sets height of parent, overlay*/
+  margin: auto;
 }
 
 .thumbnail {
@@ -173,6 +178,7 @@ a.port-anchor {
   overflow: hidden;
   margin: 0 0 20px 0;
   /*  padding: 0;*/
+  min-height: 250px;
 }
 
 .thumbnail:hover .overlay {
