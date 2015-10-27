@@ -1,0 +1,413 @@
+<!--
+ * FILENAME:    index.html
+ * DESCRIPTION: This is the main page for codyschindler.com.
+ * REQS:        Bootstrap (CSS & JS), jQuery, index-css.css, index-js.js
+ * VERISON:     1.0.0
+ * UPDATED:     2015-10-25
+ * WRITTEN BY:  Cody Schindler (quiksand)
+ * ORGANIZATION: Loading order, then functional groups, then alphabetical
+ * CHANGELOG:  
+ * 1.0.0 (2015-10-25): Creation and organization in preparatiion for site launch.
+ *
+ * TODO: Update about statement, subtitle. add projects, work & education pages/sections, add hipster logo generator to credits.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+  <!--link favicon and icons-->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Cody S">
+  <meta name="application-name" content="Cody S">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#19b2e3">
+  <!--tab/window title -->
+  <title>Cody Schindler</title>
+  <!--link font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--link bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!--link custom css -->
+  <link rel="stylesheet" type="text/css" href="index-css.css">
+  <!--meta stuff -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <!--navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!--collapsing navbar -->
+      <div class="navbar-header">
+
+      <!-- hidden button for holding links on small screen -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!--brand button -->
+        <a class="navbar-brand active" href="#">Cody Schindler</a>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /container -->
+  </nav>
+  <!--/navbar -->
+
+  <!--home segment-->
+  <div class="seg vertical-center" id="home">
+  <!--content container -->
+    <div class="container">
+
+      <!--header-->
+      <div class=="row">
+        <div class="home-title col-xs-12 text-center">
+          <h1>Cody Schindler</h1>
+        </div>
+      </div>
+
+      <!--subheader -->
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h3>Engineer</h3>
+        </div>
+      </div>
+
+      <!--line across page-->
+      <div class="row">
+        <div class="col-xs-12 bar"></div>
+      </div>
+
+      <!--button row-->
+      <div class="row">
+        <!--button col -->
+        <div class="col-sm-12 text-center">
+          <!--twiter button -->
+          <a href="https://twitter.com/codyschindler" target="_blank" type="button" class="btn btn-default btn-lg btn-inverse"><span class="fa fa-twitter"></span> Twitter</a>
+          <!--github button -->
+          <a href="https://github.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-github"></span> Github</a>
+          <!--linkedin button -->
+          <a href="https://www.linkedin.com/in/codyschindler/" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-linkedin"></span> Linkedin</a>
+          <!--free code camp button -->
+          <a href="http://freecodecamp.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-fire"></span> Free Code Camp</a>
+          <!--stack overflow button -->
+          <a href="http://stackoverflow.com/users/5201043/quiksand?tab=profile" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-stack-overflow"></span> Stack Overflow</a>
+          <!--codecademy button -->
+          <a href="https://www.codecademy.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><img class="codecicon" src="https://codecademy.com/favicon.ico"></img> Codecademy</a>
+        </div>
+        <!--/col -->
+      </div>
+      <!--/row -->
+
+    </div>
+    <!--/container -->
+  </div>
+  <!--/home seg -->
+
+  <!--about segment -->
+  <div class="seg vertical-center" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 text-justify vertical-center">
+
+          <!--about text -->
+          <div class="about-thumb">
+
+            <h1 class="about-header">About me...</h1>
+
+            <p class="about-text">
+
+              I am an EIT certified mechanical engineer with a passion for robotics and software. My education includes advanced mathematics and control system design. Professionally, I have experience designing medical devices for minimally invasive surgery and managing government-funded energy efficiency projects. Now I would like to move my career more firmly into the technology sector. To that end, I have recently relocated to beautiful Santa Barbara, CA to pursue a degree in Computer Science. In my free time I'm working toward a full-stack web development certificate from <a class="about" href="http://freecodecamp.com">freecodecamp.com</a>. Going forward, I would like to integrate my web skills with robots and the sensors in
+              the "Internet of Things."
+
+            </p>
+          </div>
+          <!--/about thumb -->
+        </div>
+        <!--/col -->
+
+        <!--round picture -->
+        <div class="col-sm-6 vertical-center">
+          <img class="img-round" src="http://codyschindler.com/random/download_20150607_225225.jpeg" alt="Cody at a comedy show in Mountain View"></img>
+        </div>
+
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </div>
+  <!--about segment-->
+
+  <!--portfolio segment-->
+  <div class="seg vertical-center text-center" id="portfolio">
+    <div class="container">
+
+      <!--portfolio header -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="portfolio-header">Portfolio</h1>
+          <p class="portfolio-text">A selection of my work</p>
+        </div>
+      </div>
+
+      <!-- row 1 -->
+      <div class="row">
+
+        <div class="col-sm-4">
+          <a class="port-anchor" href="#">
+            <div class="thumbnail">
+              <div class="overlay">
+                <span class="fa fa-fire fa-4x spanner"></span>
+              </div>
+              <img src="http://placehold.it/200x150&text=200x150" alt="Coming soon!">
+              <div class="caption">
+                <h3>Project</h3>
+                <p>Coming soon!
+                  <br>See you then!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <a class="port-anchor" href="#">
+            <div class="thumbnail">
+              <div class="overlay">
+                <span class="fa fa-fire fa-4x spanner"></span>
+              </div>
+              <img src="http://placehold.it/200x150&text=200x150" alt="Coming soon!">
+              <div class="caption">
+                <h3>Project</h3>
+                <p>Coming soon!
+                  <br>See you then!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <a class="port-anchor" href="#">
+            <div class="thumbnail">
+              <div class="overlay">
+                <span class="fa fa-fire fa-4x spanner"></span>
+              </div>
+              <img src="http://placehold.it/200x150&text=200x150" alt="Coming soon!">
+              <div class="caption">
+                <h3>Project</h3>
+                <p>Coming soon!
+                  <br>See you then!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <!--/row 1 -->
+
+      <!--row 2-->
+      <div class="row">
+
+        <div class="col-sm-4">
+          <a class="port-anchor" href="#">
+            <div class="thumbnail">
+              <div class="overlay">
+                <span class="fa fa-fire fa-4x spanner"></span>
+              </div>
+              <img src="http://placehold.it/200x150&text=200x150" alt="Coming soon!">
+              <div class="caption">
+                <h3>Project</h3>
+                <p>Coming soon!
+                  <br>See you then!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <a class="port-anchor" href="#">
+            <div class="thumbnail">
+              <div class="overlay">
+                <span class="fa fa-fire fa-4x spanner"></span>
+              </div>
+              <img src="http://placehold.it/200x150&text=200x150" alt="Coming soon!">
+              <div class="caption">
+                <h3>Project</h3>
+                <p>Coming soon!
+                  <br>See you then!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <a class="port-anchor" href="#">
+            <div class="thumbnail">
+              <div class="overlay">
+                <span class="fa fa-fire fa-4x spanner"></span>
+              </div>
+              <img src="http://placehold.it/200x150&text=200x150" alt="Coming soon!">
+              <div class="caption">
+                <h3>Project</h3>
+                <p>Coming soon!
+                  <br>See you then!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <!--row 2-->
+
+    </div>
+    <!--/container -->
+  </div>
+  <!--portfolio segment-->
+
+  <!--contact segment-->
+  <div class="seg vertical-center" id="contact">
+    <div class="container text-left">
+      <div class="row">
+
+        <!--contact email -->
+        <div class="col-sm-8">
+          <h2 class="contact-text">Connect with Cody Schindler:
+          <br> admin@codyschindler.com</h2>
+        </div>
+
+        <!--profile links/buttons -->
+        <div class="col-sm-4">
+          <!--twitter -->
+          <div>
+            <a href="https://twitter.com/codyschindler" target="_blank" type="button" class="btn btn-default btn-lg btn-inverse"><span class="fa fa-twitter"></span> Twitter</a>
+          </div>
+          <!--github -->
+          <div>
+            <a href="https://github.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-github"></span> Github</a>
+          </div>
+          <!--linkedin -->
+          <div>
+            <a href="https://www.linkedin.com/in/codyschindler/" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-linkedin"></span> Linkedin</a>
+          </div>
+          <!--free code camp -->
+          <div>
+            <a href="http://freecodecamp.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-fire"></span> Free Code Camp</a>
+          </div>
+          <!--stack overflow -->
+          <div>
+            <a href="http://stackoverflow.com/users/5201043/quiksand?tab=profile" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-stack-overflow"></span> Stack Overflow</a>
+          </div>
+          <!--codecademy -->
+          <div>
+            <a href="https://www.codecademy.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"> <img class="codecicon" src="https://codecademy.com/favicon.ico"></img> Codecademy</a>
+          </div>
+
+        </div>
+        <!--/col -->
+      </div>
+      <!--row -->
+    </div>
+    <!--/container -->
+  </div>
+  <!--contact segment-->
+
+  <!--footer-->
+  <nav class="nav navbar-default" id="footer">
+    <div class="container">
+
+      <!--breadcrumbs -->
+      <div class="row">
+        <div class="col-sm-12 navbar-text">
+          <a href="#">Home</a>&nbsp&nbsp-&nbsp
+          <a href="#about">About</a>&nbsp&nbsp-&nbsp
+          <a href="#portfolio">Portfolio</a>&nbsp&nbsp-&nbsp
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <!--/breadcrumbs -->
+
+      <!--copyright and credits -->
+      <div class="row">
+        <div class="col-sm-12 navbar-text">
+        <!-- Copytight text -->
+          Copyright &copy 2015 Cody Schindler //
+          <!-- photocredit link and menu links-->
+          <div class="photocredlink dropup">
+            <!--link -->
+            <a class="dropdown-toggle" type="button" id="photocreds" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Photo Credits
+             </a>
+            <!--menu links -->
+            <ul class="dropdown-menu" aria-labelledby="photocreds">
+              <li class="dropdown-header">
+                Thanks to: 
+              </li>
+              <li>
+                <a href="http://earthview.withgoogle.com/" target="_blank">Mauritania - Google Earthview/Digital Globe</a>
+              </li>
+              <li>
+                <a href="http://7-themes.com/" target="_blank">Discovery - 7-Themes.com</a>
+              </li>
+              <li>
+                <a href="http://www.thegreatcountryrun.com/" target="_blank">Sacramento - The Great Country Run</a>
+              </li>
+            </ul>
+
+          </div>
+          <!--/photocredit link and menu links-->
+
+        </div>
+        <!--/col -->
+      </div>
+      <!--/row -->
+    </div>
+    <!--/copyright and credits -->
+
+  </nav>
+  <!--/footer -->
+
+  <!-- load jquery -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <!-- load bootstrap javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous" defer></script>
+
+  <!-- load custom javascript -->
+  <script src="index-js.js" type="text/javascript" charset="utf-8" defer></script>
+
+</body>
+
+</html>
