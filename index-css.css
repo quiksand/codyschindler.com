@@ -67,7 +67,7 @@ a {
 /*________________________HOME_____________________________________________*/
 
 #home {
-  background-image: url("http://www.codyschindler.com/random/google-earth-view-6300-2.jpg");
+  background-image: url("/random/google-earth-view-6300-2.jpg");
   /*OLD BACKGROUND*/
   /*background-image: url("http://www.hdwallpapers.in/walls/morning_beach-wide.jpg");*/
 }
@@ -97,7 +97,7 @@ h1 {
 /*________________________ABOUT___________________________________________*/
 
 #about {
-  background-image: url("http://www.codyschindler.com/random/IMG_20150509_191330-3.jpg");
+  background-image: url("/random/IMG_20150509_191330-3.jpg");
 }
 
 .about-header {
@@ -128,7 +128,7 @@ h1 {
 /*________________________PORTFOLIO_______________________________________*/
 
 #portfolio {
-  background-image: url("http://www.codyschindler.com/random/7035454-space-shuttle-discovery.jpg");
+  background-image: url("/random/7035454-space-shuttle-discovery.jpg");
 }
 
 a.port-anchor {
@@ -195,7 +195,7 @@ a.port-anchor {
 /*________________________CONTACT_________________________________________*/
 
 #contact {
-  background-image: url("http://www.codyschindler.com/random/sacramento.jpg");
+  background-image: url("/random/sacramento.jpg");
 }
 
 .contact-text {

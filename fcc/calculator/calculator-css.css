@@ -1,0 +1,194 @@
+/**
+ * FILENAME:    calculator-css.css
+ * DESCRIPTION: This is the CSS for codyschindler.com/fcc/calculator.
+ * REQS:        n/a
+ * VERISON:     1.0.1
+ * UPDATED:     2015-11-16
+ * WRITTEN BY:  Cody Schindler (quiksand)
+ * ORGANIZATION: 
+ * CHANGELOG:  
+ * 1.0.0 (2015-11-03): Creation
+ * 1.0.1 (2015-11-16): Deployment
+ */
+
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	color: #FCF4D9;
+	background-color: #333333;
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+	color: #FCF4D9;
+	text-decoration: none;
+}
+
+.calcbody {
+	margin: auto;
+	border: 3px solid #FFF5C3;
+	border-radius: 20px;
+	width: 306px;
+	height: 500px;
+	padding: 0px;
+}
+
+.calcscreen {
+	border-radius: 10px;
+	border: 3px solid #FFF5C3;
+	margin: 15px auto 10px auto;
+	width: 280px;
+	height: 100px;
+	position: relative;
+}
+
+.displayEntry {
+	font-size: 4em;
+	height: 66px;
+	width: 235px;
+	position: absolute;
+	text-align: right;
+	overflow: hidden;
+	bottom: 0px;
+	right: 5px;
+	padding: 0px 0px 70px 0px;
+}
+
+.displayRegister {
+	font-size: 1.5em;
+	height: 34px;
+	width: 254px;
+	text-align: right;
+	position: absolute;
+	right: 5px;
+	overflow: hidden;
+}
+
+.fa-stack {
+	position: absolute;
+	margin: 20px 0 0 20px;
+}
+
+.fa-stack:hover {
+	transform: scale(1.05);
+}
+
+.funcbutton {
+	border: 3px solid #FF7260;
+	border-radius: 10px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	margin: 10px;
+	display: inline-block;
+	position: relative;
+	float: left;
+	vertical-align: center;
+	line-height: 44px;
+	white-space: nowrap;
+	font-size: 2em;
+}
+
+.funcbutton:active,
+.funcbutton:focus {
+	background-color: #FF7260;
+}
+
+.hidden-link {
+	margin: auto;
+}
+.numbutton {
+	border: 3px solid #83831F;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	margin: 10px;
+	display: inline-block;
+	position: relative;
+	float: left;
+	line-height: 44px;
+	white-space: nowrap;
+	font-size: 2em;
+}
+
+.numbutton:active,
+.numbutton:focus {
+	background-color: #83831F;
+}
+
+.opbutton {
+	border: 3px solid #00AAA0;
+	border-radius: 10px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	margin: 10px;
+	display: inline-block;
+	position: relative;
+	float: left;
+	line-height: 44px;
+	white-space: nowrap;
+	font-size: 2em;
+}
+
+.opbutton:active,
+.opbutton:focus,
+.sign:focus,
+.sign:active {
+	background-color: #00AAA0;
+}
+
+.plus {
+	height: 120px !important;
+	border-radius: 10px !important;
+	line-height: 114px !important;
+}
+
+.sign {
+	border: 3px solid #00AAA0;
+	border-radius: 5px;
+	height: 24px;
+	width: 24px;
+	text-align: center;
+	font-size: .9em;
+	position: absolute;
+	left: 5px;
+	bottom: 21px;
+	line-height: 18px;
+	white-space: nowrap;
+}
+
+.zero,
+.period,
+.equal {
+	bottom: 70px;
+}
+
+.opbutton:hover,
+.funcbutton:hover,
+.numbutton:hover,
+.sign:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+.ac,
+.seven,
+.four, 
+.one,
+.zero {
+	margin-left: 20px !important;
+}
+
+.vertical-center {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

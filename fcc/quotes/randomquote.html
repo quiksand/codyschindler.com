@@ -1,0 +1,78 @@
+<!--
+ * FILENAME:    randomquote.html
+ * DESCRIPTION: Random quote generator loading page for the iframe in index.html
+ * REQS:        quotedb.com
+ * VERISON:     1.0.1
+ * UPDATED:     2015-10-27
+ * WRITTEN BY:  Cody Schindler (quiksand)
+ * ORGANIZATION: none
+ * CHANGELOG:  
+ * 1.0.1 (2015-10-27): Deprecation. Keep for codepen connectivity.
+ * 1.0.0 (2015-10-26): Creation.
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<title>Random Quote Generator</title>
+	
+		<style>
+			* {
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 18px;
+			}
+		
+ 			html, body{
+ 				margin: 0;
+ 				text-align: center;
+ 				color: #f8f8f8;
+ 				padding: 0;
+ 				display: flex;
+ 				align-items: center;
+ 				height: 100vh;
+ 				width: 100%;
+ 			}
+ 			.hidden {
+ 				display: none;
+ 			}
+ 			
+ 			a.authorlink{
+ 				text-decoration: none;
+ 				color: #337ab7;
+ 			}
+ 			
+ 			.container {
+ 				text-align: center;
+ 				width: 100%;
+ 			}
+ 			
+ 			.showme {
+ 				position: relative;
+				margin-right: auto;
+ 				margin-left: auto;
+ 			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="showme">
+				<!-- formatted quote goes in here -->
+			</div>
+		</div>
+
+		<div class="hidden">
+			<script language="javascript" src="https://www.quotedb.com/quote/quote.php?action=random_quote&c[8]=8&c[126]=126&c[80]=80&c[74]=74&c[27]=27&c[37]=37&c[20]=20&c[109]=109&c[39]=39&c[71]=71&c[15]=15&c[73]=73&c[51]=51&c[32]=32&c[81]=81&c[34]=34&=&"></script>
+    	</div>
+
+		<!-- load jquery -->
+  		<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8" defer></script>
+		<!-- load custom js -->
+    	<script src="randomquote-js.js" type="text/javascript" charset="utf-8" defer></script>
+
+	</body>
+
+</html>
+

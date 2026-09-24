@@ -1,0 +1,97 @@
+<!--
+ * FILENAME:    index.html
+ * DESCRIPTION: Random quote generator main page.
+ * REQS:        Bootstrap (CSS & JS), Font Awesome, jQuery, generator-css.css, generator-js.js, rq.html
+ * VERISON:     1.0.1
+ * UPDATED:     2015-10-27
+ * WRITTEN BY:  Cody Schindler (quiksand)
+ * ORGANIZATION: none
+ * CHANGELOG:  
+ * 1.0.1 (2015-10-27): Added tweet feature. Deprecated usage of randomquote.html.
+ * 1.0.0 (2015-10-26): Creation.
+-->
+
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Random Quote Generator</title>
+  <!--link bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!--link font awesome css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--link custom css -->
+  <link rel="stylesheet" type="text/css" href="generator-css.css">
+  <!--meta stuff -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Random Quote Machine</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          Click the button for random quotes. This project was created in response to the second Zipline prompt at <a target="_blank" href="https://www.freecodecamp.org">freecodecamp.org</a>.
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+
+      <div class="row">
+        <button type="button" class="btn btn-lg btn-primary quotebutton">
+          New Quote!
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="thumb quoteseg">
+          <!-- quotes go here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <a href="" type="button" class="btn btn-lg btn-info tweetbutton">
+          <span class="fa fa-twitter"></span> Tweet it!
+        </a>
+      </div>
+
+      Quotes kindly provided by <a target="_blank" href="https://www.quotedb.com">Quote DB</a>
+
+      <div class="row">
+        <div class="col-sm-12">         
+         <iframe class="exframe thumb hidden" src="/fcc/quotes/rq.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        </div>
+      </div>
+
+    </div>
+    <!--/container -->
+  </div>
+  <!--/main -->
+
+  <!-- load jquery -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <!-- load bootstrap javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous" defer></script>
+  <!-- load twitter js -->
+  <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+  <!-- load custom javascript -->
+  <script src="generator-js.js" type="text/javascript" charset="utf-8" defer></script>
+
+
+</body>
+
+</html>

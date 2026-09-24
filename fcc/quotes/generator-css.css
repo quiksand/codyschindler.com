@@ -1,0 +1,51 @@
+/**
+ * FILENAME:    generator-css.css
+ * DESCRIPTION: Random quote generator css
+ * REQS:        
+ * VERISON:     1.0.1
+ * UPDATED:     2015-10-27
+ * WRITTEN BY:  Cody Schindler (quiksand)
+ * ORGANIZATION: none
+ * CHANGELOG:  
+ * 1.0.1 (2015-10-27): Added tweet feature.
+ * 1.0.0 (2015-10-26): Creation.
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  text-align: center;
+  height: 100vh;
+  position: static;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/random/google-earth-view-6531.jpg");
+}
+
+.thumb {
+  background-color: rgba(40,70,80,.3);
+  border-radius: 5px;
+  border: 1px solid #f8f8f8;
+  font-size: 18px;
+  color: #f8f8f8;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  height: inherit;
+  width: 100%;
+}
+
+.btn {
+  margin: 15px 0 0 0;
+}
+
+h1{
+  font-size: 4em;
+  color: ;
+}

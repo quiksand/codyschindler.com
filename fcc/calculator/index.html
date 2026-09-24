@@ -1,0 +1,96 @@
+<!--
+ * FILENAME:    index.html
+ * DESCRIPTION: This is the main page for codyschindler.com/fcc/calculator.
+ * REQS:        Bootstrap (CSS & JS), jQuery, calculator-css.css, calculator-js.js
+ * VERISON:     1.0.1
+ * UPDATED:     2015-11-16
+ * WRITTEN BY:  Cody Schindler (quiksand)
+ * ORGANIZATION: n/a
+ * CHANGELOG:  
+ * 1.0.0 (2015-11-03): Creation and organization in preparatiion for site launch.
+ * 1.0.1 (2015-11-16): Deployment
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<title>Calculator</title>
+		<!--link font awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!--link bootstrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<!--link custom css -->
+		<link rel="stylesheet" type="text/css" href="calculator-css.css">
+		<!--meta stuff -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container-fluid ">
+		
+			<div class="row vertical-center">
+				<!-- <div class="col-xs-12"> -->
+				<a class="hidden-xs back-button" href="/#portfolio" title="Back to codyschindler.com">
+					<span class="fa-stack fa-3x">
+						<span class="fa fa-circle-thin fa-stack-2x"></span>
+						<span class="fa fa-arrow-left fa-stack-1x"></span>
+					</span>
+				</a>
+
+				<div class="calcbody">
+				<div class="calcscreen">
+					<div class="displayRegister"></div>
+					<div class="displayEntry">0</div>
+					<div class="sign">+/-</div>
+				</div>
+					<div class="ac funcbutton">AC</div>
+					<div class="ce funcbutton">CE</div>
+					<div class="operator modulo opbutton">%</div>
+					<div class="operator division opbutton">/</div>
+					<div class="num seven numbutton">7</div>
+					<div class="num eight numbutton">8</div>
+					<div class="num nine numbutton">9</div>
+					<div class="operator multiplication opbutton">x</div>
+					<div class="num four numbutton">4</div>
+					<div class="num five numbutton">5</div>
+					<div class="num six numbutton">6</div>
+					<div class="operator minus opbutton">-</div>
+
+					
+					<div class="num one numbutton">1</div>
+					<div class="num two numbutton">2</div>
+					<div class="num three numbutton">3</div>
+					<div class="operator plus opbutton">+</div>
+
+					<div class="num zero numbutton">0</div>
+					<div class="num period numbutton">.</div>
+										
+					
+					<div class="operator equal opbutton">=</div>
+				<!-- </div> -->
+				</div>
+
+				<div class="visible-xs-block hidden-link">
+					<a href="/#portfolio" title="Back to codyschindler.com">
+						<span class="fa fa-arrow-left"></span>
+						Back to codyschindler.com
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- load jquery -->
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8" defer></script>
+
+		<!-- load bootstrap javascript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous" defer></script>
+
+		<!-- load custom javascript -->
+		<script src="calculator-js.js" type="text/javascript" charset="utf-8" defer></script>
+
+
+	</body>
+</html>
