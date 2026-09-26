@@ -1,407 +1,47 @@
-<!--
- * FILENAME:    index.html
- * DESCRIPTION: This is the main page for codyschindler.com.
- * REQS:        Bootstrap (CSS & JS), jQuery, index-css.css, index-js.js
- * VERISON:     1.0.2
- * UPDATED:     2015-11-16
- * WRITTEN BY:  Cody Schindler (quiksand)
- * ORGANIZATION: n/a
- * CHANGELOG:  
- * 1.0.2 (2015-11-16): Updated portfolio section to include calculator.
- * 1.0.1 (2015-10-27): Added link to quote generator project, made the portfolio overlay system better.
- * 1.0.0 (2015-10-25): Creation and organization in preparatiion for site launch.
- * TODO: Update about statement, subtitle. add projects, work & education pages/sections, add hipster logo generator to credits.
--->
-
 <!DOCTYPE html>
-
-<html lang="en-US">
-
+<html lang="en">
 <head>
-
-  <!--link favicon and icons-->
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="apple-mobile-web-app-title" content="Cody S">
-  <meta name="application-name" content="Cody S">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-  <meta name="theme-color" content="#19b2e3">
-  <!--tab/window title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cody Schindler</title>
-  <!--link font awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <!--link bootstrap -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  <!--link custom css -->
-  <link rel="stylesheet" type="text/css" href="index-css.css">
-  <!--meta stuff -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="description" content="Cody Schindler — Engineer and founder based in California.">
+  <link rel="canonical" href="https://codyschindler.com/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://codyschindler.com/">
+  <meta property="og:title" content="Cody Schindler">
+  <meta property="og:description" content="Engineer and founder based in California.">
+  <meta property="og:site_name" content="Cody Schindler">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cody Schindler">
+  <meta name="twitter:description" content="Engineer and founder based in California.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <!--navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!--collapsing navbar -->
-      <div class="navbar-header">
-
-      <!-- hidden button for holding links on small screen -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <!--brand button -->
-        <a class="navbar-brand active" href="#">Cody Schindler</a>
-
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbar-items">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /container -->
-  </nav>
-  <!--/navbar -->
-
-  <!--home segment-->
-  <div class="seg vertical-center" id="home">
-  <!--content container -->
-    <div class="container">
-
-      <!--header-->
-      <div class=="row">
-        <div class="home-title col-xs-12 text-center">
-          <h1>Cody Schindler</h1>
-        </div>
-      </div>
-
-      <!--subheader -->
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h3>Mechanical Engineer</h3>
-        </div>
-      </div>
-
-      <!--line across page-->
-      <div class="row">
-        <div class="col-xs-12 bar"></div>
-      </div>
-
-      <!--button row-->
-      <div class="row">
-        <!--button col -->
-        <div class="col-sm-12 text-center">
-          <!--twiter button -->
-          <a href="https://twitter.com/codyschindler" target="_blank" type="button" class="btn btn-default btn-lg btn-inverse"><span class="fa fa-twitter"></span> Twitter</a>
-          <!--github button -->
-          <a href="https://github.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-github"></span> Github</a>
-          <!--linkedin button -->
-          <a href="https://www.linkedin.com/in/codyschindler/" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-linkedin"></span> Linkedin</a>
-          <!--free code camp button -->
-          <a href="http://freecodecamp.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-fire"></span> Free Code Camp</a>
-          <!--stack overflow button -->
-          <a href="http://stackoverflow.com/users/5201043/quiksand?tab=profile" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-stack-overflow"></span> Stack Overflow</a>
-          <!--codecademy button -->
-          <a href="https://www.codecademy.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><img class="codecicon" src="https://codecademy.com/favicon.ico"></img> Codecademy</a>
-        </div>
-        <!--/col -->
-      </div>
-      <!--/row -->
-
-    </div>
-    <!--/container -->
-  </div>
-  <!--/home seg -->
-
-  <!--about segment -->
-  <div class="seg vertical-center" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 text-justify vertical-center">
-
-          <!--about text -->
-          <div class="about-thumb">
-
-            <h1 class="about-header">About me...</h1>
-
-            <p class="about-text">
-
-              I am an EIT certified mechanical engineer with a passion for design. My education includes advanced mathematics and control system design. Professionally, I have experience designing medical devices for minimally invasive surgery and managing government-funded energy efficiency projects. I have recently relocated to beautiful Santa Barbara, CA and am looking forward to sharpening my design skills and building upon my manufacturing experience. In my free time I'm working toward a full-stack web development certificate from <a class="about" href="http://freecodecamp.com">freecodecamp.com</a>. Going forward, I would like to integrate my web skills with robotics, sensors, and smart home appliances in the "Internet of Things."
-
-            </p>
-          </div>
-          <!--/about thumb -->
-        </div>
-        <!--/col -->
-
-        <!--round picture -->
-        <div class="col-sm-6 vertical-center">
-          <img class="img-round" src="http://codyschindler.com/random/download_20150607_225225.jpeg" alt="Cody at a comedy show in Mountain View"></img>
-        </div>
-
-      </div>
-      <!--row-->
-    </div>
-    <!--container-->
-  </div>
-  <!--about segment-->
-
-  <!--portfolio segment-->
-  <div class="seg vertical-center text-center" id="portfolio">
-    <div class="container">
-
-      <!--portfolio header -->
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="portfolio-header">Portfolio</h1>
-          <p class="portfolio-text">A selection of my work</p>
-        </div>
-      </div>
-
-      <!-- row 1 -->
-      <div class="row">
-
-        <div class="col-sm-4">
-          <a class="port-anchor" target="_blank" href="http://pdfaiw.uspto.gov/.aiw?PageNum=0&docid=20150272654&IDKey=9F952BE91C2C&HomeUrl=http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2%26Sect2=HITOFF%26p=1%26u=%252Fnetahtml%252FPTO%252Fsearch-adv.html%26r=1%26f=G%26l=50%26d=PG01%26S1=venclose%26OS=venclose%26RS=venclose">
-            <div class="thumbnail">
-              <div class="overlay">
-                <span class="fa fa-gear fa-4x spanner"></span>
-              </div>
-              <img class="img-thumb" src="http://codyschindler.com/resource/patent-img.png" alt="Venclose Patent">
-              <div class="caption">
-                <h3>Patent: Venous Disease Treatment</h3>
-                <p>Cosigner on a patent (pending) for a method of treating venous insufficiencies.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-4">
-          <a class="port-anchor" href="http://codyschindler.com/fcc/calculator/">
-            <div class="thumbnail">
-              <div class="overlay">
-                <span class="fa fa-fire fa-4x spanner"></span>
-              </div>
-              <img class="img-thumb" src="http://codyschindler.com/resource/calculator-img.png" alt="Calculator">
-              <div class="caption">
-                <h3>JavaScript Calculator</h3>
-                <p>A web calculator written in JavaScript.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-4">
-          <a class="port-anchor" href="http://codyschindler.com/fcc/pomodoro/">
-            <div class="thumbnail">
-              <div class="overlay">
-                <span class="fa fa-fire fa-4x spanner"></span>
-              </div>
-              <img src="http://codyschindler.com/resource/pomodoro-clock-img.png" alt="Pomodoro Timer">
-              <div class="caption">
-                <h3>Pomodoro Timer</h3>
-                <p>A pomodoro timer written in JavaScript! Useful for timing short tasks.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-      <!--/row 1 -->
-
-      <!--row 2-->
-      <div class="row">
-
-        <div class="col-sm-4">
-          <a class="port-anchor" href="http://codyschindler.com/fcc/weather/">
-            <div class="thumbnail">
-              <div class="overlay">
-                <span class="fa fa-fire fa-4x spanner"></span>
-              </div>
-              <img class="img-thumb" src="http://codyschindler.com/resource/weatherapp-img.png" alt="Local Weather App">
-              <div class="caption">
-                <h3>Local Weather App</h3>
-                <p>Shows the local weather based on client browser location data.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-4">
-          <a class="port-anchor" href="http://codyschindler.com/fcc/quotes/">
-            <div class="thumbnail">
-              <div class="overlay">
-                <span class="fa fa-fire fa-4x spanner"></span>
-              </div>
-              <img src="http://codyschindler.com/resource/random-quote-img.png" alt="Random Quote Generator">
-              <div class="caption">
-                <h3>Random Quote Generator</h3>
-                <p>Generates random quotes! You can tweet them!</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-4">
-          <a class="port-anchor" target="_blank" href="http://codyschindler.com/resource/ME191_Glass_Recovery_Enhancement_Final_Report.pdf">
-            <div class="thumbnail">
-              <div class="overlay">
-                <span class="fa fa-gear fa-4x spanner"></span>
-              </div>
-              <img class="img-thumb" src="http://codyschindler.com/resource/gre-img.png" alt="Glass Recovery Enhancement">
-              <div class="caption">
-                <h3>Glass Recovery Enhancement</h3>
-                <p>A novel method for increasing the amount of glass recycled at material recovery facilities.
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-      <!--row 2-->
-
-    </div>
-    <!--/container -->
-  </div>
-  <!--portfolio segment-->
-
-  <!--contact segment-->
-  <div class="seg vertical-center" id="contact">
-    <div class="container text-left">
-      <div class="row">
-
-        <!--contact email -->
-        <div class="col-sm-8">
-          <h2 class="contact-text">Connect with Cody Schindler:
-          <br> admin@codyschindler.com</h2>
-        </div>
-
-        <!--profile links/buttons -->
-        <div class="col-sm-4">
-          <!--twitter -->
-          <div>
-            <a href="https://twitter.com/codyschindler" target="_blank" type="button" class="btn btn-default btn-lg btn-inverse"><span class="fa fa-twitter"></span> Twitter</a>
-          </div>
-          <!--github -->
-          <div>
-            <a href="https://github.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-github"></span> Github</a>
-          </div>
-          <!--linkedin -->
-          <div>
-            <a href="https://www.linkedin.com/in/codyschindler/" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-linkedin"></span> Linkedin</a>
-          </div>
-          <!--free code camp -->
-          <div>
-            <a href="http://freecodecamp.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-fire"></span> Free Code Camp</a>
-          </div>
-          <!--stack overflow -->
-          <div>
-            <a href="http://stackoverflow.com/users/5201043/quiksand?tab=profile" target="_blank" type="button" class="btn btn-default btn-lg"><span class="fa fa-stack-overflow"></span> Stack Overflow</a>
-          </div>
-          <!--codecademy -->
-          <div>
-            <a href="https://www.codecademy.com/quiksand" target="_blank" type="button" class="btn btn-default btn-lg"> <img class="codecicon" src="https://codecademy.com/favicon.ico"></img> Codecademy</a>
-          </div>
-
-        </div>
-        <!--/col -->
-      </div>
-      <!--row -->
-    </div>
-    <!--/container -->
-  </div>
-  <!--contact segment-->
-
-  <!--footer-->
-  <nav class="nav navbar-default" id="footer">
-    <div class="container">
-
-      <!--breadcrumbs -->
-      <div class="row">
-        <div class="col-sm-12 navbar-text">
-          <a href="#">Home</a>&nbsp&nbsp-&nbsp
-          <a href="#about">About</a>&nbsp&nbsp-&nbsp
-          <a href="#portfolio">Portfolio</a>&nbsp&nbsp-&nbsp
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-      <!--/breadcrumbs -->
-
-      <!--copyright and credits -->
-      <div class="row">
-        <div class="col-sm-12 navbar-text">
-        <!-- Copytight text -->
-          Copyright &copy 2015 Cody Schindler //
-          <!-- photocredit link and menu links-->
-          <div class="photocredlink dropup">
-            <!--link -->
-            <a class="dropdown-toggle" type="button" id="photocreds" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Photo Credits
-             </a>
-            <!--menu links -->
-            <ul class="dropdown-menu" aria-labelledby="photocreds">
-              <li class="dropdown-header">
-                Thanks to: 
-              </li>
-              <li>
-                <a href="http://earthview.withgoogle.com/" target="_blank">Mauritania - Google Earthview/Digital Globe</a>
-              </li>
-              <li>
-                <a href="http://7-themes.com/" target="_blank">Discovery - 7-Themes.com</a>
-              </li>
-              <li>
-                <a href="http://www.thegreatcountryrun.com/" target="_blank">Sacramento - The Great Country Run</a>
-              </li>
-            </ul>
-
-          </div>
-          <!--/photocredit link and menu links-->
-
-        </div>
-        <!--/col -->
-      </div>
-      <!--/row -->
-    </div>
-    <!--/copyright and credits -->
-
-  </nav>
-  <!--/footer -->
-
-  <!-- load jquery -->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8" defer></script>
-
-  <!-- load bootstrap javascript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous" defer></script>
-
-  <!-- load custom javascript -->
-  <script src="index-js.js" type="text/javascript" charset="utf-8" defer></script>
-
+  <main>
+    <h1>Cody Schindler</h1>
+    <p class="intro">Engineer and founder based in California.</p>
+    
+    <nav class="links" aria-label="Social links">
+      <a href="https://www.linkedin.com/in/codyschindler/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+      <a href="https://github.com/quiksand" rel="noopener noreferrer" target="_blank">GitHub</a>
+      <!-- <a href="mailto:email@example.com">Email</a> -->
+    </nav>
+  </main>
+  
+  <footer>
+    <p>&copy; <span id="year"></span> Cody Schindler</p>
+  </footer>
+  
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
